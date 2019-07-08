@@ -5,7 +5,7 @@ Primary style
 -------------------------------- */
 *{
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   }
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -24,7 +24,7 @@ html * {
 
 body {
 
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   color: #029de0;
   background-color: #fff;
 }
@@ -40,8 +40,18 @@ Main Components
 
 -------------------------------- */
 .navbar a.logo{
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 font-size: 1.8em;
+}
+.logo-resources {
+  font-family: "Poppins";
+  font-size: 30px;
+    font-weight: 700;
+    color: black;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-decoration: none;
 }
 .page-title h1{
   text-align: center;
@@ -541,7 +551,7 @@ xcustom form elements
 .cd-filter-block .radio-label::before,
 .cd-filter-block .checkbox-label::before {
   /* shared style for input elements */
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 0;
   background-color: #ffffff;
   border: 2px solid #e6e6e6;
