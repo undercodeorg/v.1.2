@@ -1,0 +1,94 @@
+.centered {
+  text-align: center;
+}
+
+.top {
+  margin: 30px auto;
+}
+
+.centered {
+  margin: 50px 0;
+}
+
+.background_faint {
+  background-color: #efefef;
+}
+
+.video {
+  width: 100%;
+  height: 420px;
+}
+
+.grid_container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid__content-video {
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+}
+
+.grid__content-video:first-of-type {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .grid_container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 100%;
+  }
+}
+
+.sliders {
+  margin-bottom: 110px;
+  width: 1500px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.playlist_video {
+  margin: 10px 0;
+  width: 100%;
+  text-align: left;
+  color: #333;
+}
+
+.top .nav {
+  margin: 0 20px;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.back {
+  margin: 40px 0 70px;
+  text-align: center;
+}
+
+.top .nav:hover {
+  color: #029de0;
+}
+
+img#img-responsive {
+  width: 80px;
+  height: 60px;
+}
+
+/* Single videos */
+
+.video_wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vid_frame {
+  width: 100%;
+  height: 80%;
+}

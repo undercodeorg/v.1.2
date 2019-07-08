@@ -1,0 +1,53 @@
+.container {
+  margin-top: -18px;
+  width: 100%;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.container .sliders {
+  overflow-y: scroll;
+  width: 100%;
+  height: 3000px;
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.next {
+  top: 0;
+}
+.previous {
+  bottom: 0;
+}
+
+#img-responsive {
+  width: 100%;
+  height: 60px;
+}
+.no_margin {
+  margin-top: 22px;
+  margin-left: 10px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#img-responsive:hover {
+  cursor: pointer;
+}
+
+.vid-container {
+  width: 100%;
+}
