@@ -72,12 +72,11 @@
   width: 100%;
   height: 60px;
 }
-.no_margin {
-  margin-top: 22px;
+#sld >.no_margin {
+  margin-top: -22px;
   margin-left: 10px;
-  position: absolute;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
 }
 

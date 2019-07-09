@@ -79,7 +79,6 @@
           <div class="grid__content-video">
             <div class="container">
               <div class="sliders" id="sld">
-                <div class="box">
 
                   <div class="playlist_video" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jVe1GBCqFIE'"><img id="img-responsive" src="http://img.youtube.com/vi/jVe1GBCqFIE/0.jpg">
                   <span class="no_margin">01: Introduction</span>
@@ -129,9 +128,7 @@
                   <img id="img-responsive" src="http://img.youtube.com/vi/CdGQJgkLQKM/0.jpg">
                   <span class="no_margin">10: Wrap and Unwrap Elements</span>
                   </div>
-                </div>
 
-                <div class="box">
                   <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/nYBa0UGLn4g'">
                   <img id="img-responsive" src="http://img.youtube.com/vi/nYBa0UGLn4g/0.jpg">
                   <span class="no_margin">11: Removing Content</span>
@@ -175,9 +172,7 @@
                   <img id="img-responsive" src="http://img.youtube.com/vi/lTRB9u1aoJU/0.jpg">
                   <span class="no_margin">19: Animations in jQuery</span>
                   </div>
-            </div>
 
-            <div class="box">
               <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/tWvzHuTvRxc'">
               <img id="img-responsive" src="http://img.youtube.com/vi/tWvzHuTvRxc/0.jpg">
               <span class="no_margin">20: Fading Elements In & Out</span>
@@ -212,12 +207,11 @@
               <img id="img-responsive" src="http://img.youtube.com/vi/5UrinQ1qboQ/0.jpg">
               <span class="no_margin">26: What Next?</span>
               </div>
-            </div>
+
           </div>
         </div>
         </div>
-        <span class="nav previous" onclick="fPrevious()"><</span>
-        <span class="nav next" onclick="fNext()">></span>
+
       </div>
       </div>
     </section>
@@ -227,51 +221,33 @@
     </div>
     </div>
 
-	  <section>
-		<footer>
-		  <div class="wrapper">
-			  <ul class="footer_nav">
-				  <li>2019 by <a href="../index.html">undecode</a></li>
-				  <li><a href="../data-policy.html">Data-Policy</a></li>
-				  <li>support@undercode.com</li>
-				  <li>Lisbon, Portugal</li>
-				  <li>
-					  <ul class="social_icons">
-						  <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
-
-						  <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
-
-						  <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
-
-						  <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
-					  </ul>
-				  </li>
-			  </ul>
-		  </div>
-		</footer>
-
-    <script type="text/javascript" src="../js/app.js"></script>
-    <script type="text/javascript" src="../js/slideshow/slideshow2.js"></script>
-
-  <!-- ===== nav script end ===== -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.jsscript"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".arrow-right").bind("click", function (event) {
-          event.preventDefault();
-          $(".vid-list-container").stop().animate({
-              scrollLeft: "+=117"
-          }, 750);
-      });
-      $(".arrow-left").bind("click", function (event) {
-          event.preventDefault();
-          $(".vid-list-container").stop().animate({
-              scrollLeft: "-=117"
-          }, 750);
-      });
-  });
-  </script>
-
-  </body>
-
-  </html>
+	   <!-- Footer-->
+     <section>
+      <footer>
+        <div class="wrapper">
+          <ul class="footer_nav">
+            <li>2019 by <a href="../index.html">undecode</a></li>
+            <li><a href="../data-policy.html">Data-Policy</a></li>
+            <li>support@undercode.com</li>
+            <li>Lisbon, Portugal</li>
+            <li>
+              <ul class="social_icons">
+                <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
+  
+                <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
+  
+                <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
+  
+                <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
+  
+      <script type="text/javascript" src="../js/app.js"></script>
+  
+    <!-- ===== nav script end ===== -->
+    </body>
+  
+    </html>
