@@ -1,30 +1,34 @@
 
 .container  {
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 .grid__content-video > .video {
+  width: 100%;
   margin-top: 10px;
   max-width: 960px;
-  width: 100%;
   height: 540px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 .grid_playlist{
+
 margin-top: 20px;
 max-width: 400px;
 }
 
 .container .sliders {
-  height: 1500px;
+  position:absolute;
+ width: 100%;
+  height: 100%;
   -webkit-overflow-scrolling: touch;
-  overflow-scrolling: auto;
+  overflow: auto;
   max-height: 500px;
   overflow-y: scroll;
-  width: 400px;
-  position: absolute;
+  max-width: 400px;
   transition: all 1s ease-in-out;
 }
 
@@ -33,7 +37,7 @@ max-width: 400px;
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #666666;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
@@ -47,7 +51,8 @@ padding: 10px;
 .grid_playlist .playlist_video{
   padding-left: -150px;
   float: left;
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   height: 60px;
   border-radius: 10px;
   background: #fefeff;
@@ -73,7 +78,6 @@ padding: 10px;
 }
 
 
-
 #img-responsive {
   border-radius: 10px 0px 10px 0px;
   width: 100%;
@@ -87,4 +91,19 @@ padding: 10px;
 
 .vid-container {
   width: 100%;
+}
+
+.powerby{
+  margin-top: -30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .container .sliders {
+   
+  }
+
+  
 }
