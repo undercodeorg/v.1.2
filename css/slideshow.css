@@ -1,19 +1,29 @@
 
-.container {
-  margin-top: -10px;
+.container  {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid__content-video > .video {
+  margin-top: 10px;
+  max-width: 960px;
   width: 100%;
-  height: 425px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 25px;
+  height: 540px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.grid_playlist{
+margin-top: 20px;
+max-width: 400px;
 }
 
 .container .sliders {
+  height: 1500px;
   -webkit-overflow-scrolling: touch;
   overflow-scrolling: auto;
-  max-height: 420px;
+  max-height: 500px;
   overflow-y: scroll;
-  width: 100%;
+  width: 400px;
   position: absolute;
   transition: all 1s ease-in-out;
 }
@@ -23,62 +33,53 @@
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: #333;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
-#sld > div{
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 300px;
-    height: 60px;
-    border-radius: 10px;
-    background: #fefeff;
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    position: relative;
+.playlist-title{
+max-width: 400px;
+padding: 10px;
 }
 
-
-@media screen and (max-width: 767px) {
+.grid_playlist .playlist_video{
+  padding-left: -150px;
+  float: left;
+  width: 380px;
+  height: 60px;
+  border-radius: 10px;
+  background: #fefeff;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
   
-    #sld > div{
-      overflow-y: scroll;
-      scroll-snap-align: start;
-      flex-shrink: 0;
-      width: 268px;
-      height: 60px;
-      border-radius: 10px;
-      background: #fefeff;
-      transform-origin: center center;
-      transform: scale(1);
-      transition: transform 0.5s;
-      position: relative;
-      cursor: pointer;
+}
+.grid_playlist .playlist_video > img {
+  font-size: 15px;
+  font-weight: 400;
+  float: left;
+  margin-right: 10px
+}
+.grid_playlist .playlist_video .playlist-text > p {
+  
+  max-width: 500px;
+  font-size: 15px;
+  font-weight: 400; 
+  text-align: left;
+  vertical-align: middle;
+  line-height: 60px;  
 }
 
-.next {
-  top: 0;
-}
-.previous {
-  bottom: 0;
-}
+
 
 #img-responsive {
   border-radius: 10px 0px 10px 0px;
   width: 100%;
   height: 60px;
 }
-#sld >.no_margin {
-  margin-top: -22px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 400;
-}
+
 
 #img-responsive:hover {
   cursor: pointer;
