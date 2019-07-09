@@ -10,6 +10,8 @@
 }
 
 .container .sliders {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: auto;
   max-height: 420px;
   overflow-y: scroll;
   width: 100%;
