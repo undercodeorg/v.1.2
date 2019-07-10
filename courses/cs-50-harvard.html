@@ -72,63 +72,89 @@
         </div>
       <div class="grid_container background_faint">
         <div class="grid__content-video">
-            <iframe class="video" src="https://www.youtube.com/embed/5azaK2cBKGw" id="vid_frame" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" id="vid_frame" src="https://www.youtube.com/embed/5azaK2cBKGw"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br /><br />
-            <p>Powered by: Harvard</p>
         </div>
-        <div class="grid__content-video">
+
+        <div class="grid_playlist">
+          <div class="playlist-title"><h3>Playlist:</h3></div>
           <div class="container">
             <div class="sliders" id="sld">
+               
 
                 <div class="playlist_video" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/5azaK2cBKGw'"><img id="img-responsive" src="http://img.youtube.com/vi/5azaK2cBKGw/0.jpg">
-                <span class="no_margin">01: Computational Thinking, Scratch</span>
+                <div class="playlist-text">
+                <p class="no_margin">01: Computational Thinking, Scratch</p>
                 </div>
+                </div>  
+
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wEdvGqxafq8'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/wEdvGqxafq8/0.jpg">
-                <span class="no_margin">02: C</span>
+                <div class="playlist-text">
+                <p class="no_margin">02: C</p>
                 </div>
+                </div>  
+
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/u-kH-5JJSgU'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/u-kH-5JJSgU/0.jpg">
-                <span class="no_margin">03: Arrays</span>
+                <div class="playlist-text">
+                <p class="no_margin">03: Arrays</p>
                 </div>
+                </div>  
+
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/cC9I3XxkZXw'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/cC9I3XxkZXw/0.jpg">
-                <span class="no_margin">04: Memory</span>
+                <div class="playlist-text">
+                <p class="no_margin">04: Memory</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ed2lnJNf7HU'">
                   <img id="img-responsive" src="http://img.youtube.com/vi/ed2lnJNf7HU/0.jpg">
-                  <span class="no_margin">05: Data Structures</span>
+                  <div class="playlist-text">
+                  <p class="no_margin">05: Data Structures</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/uEmF74eHRO8'">
                   <img id="img-responsive" src="http://img.youtube.com/vi/uEmF74eHRO8/0.jpg">
-                   <span class="no_margin">06: HTTP, HTML, CSS</span>
+                  <div class="playlist-text">
+                  <p class="no_margin">06: HTTP, HTML, CSS</p>
                  </div>
+                </div>
 
                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/mvlTSMUNQN4'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/mvlTSMUNQN4/0.jpg">
-                <span class="no_margin">07: Python</span>
+                <div class="playlist-text">
+                <p class="no_margin">07: Python</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/zzDUnnj2p8I'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/zzDUnnj2p8I/0.jpg">
-                <span class="no_margin">08: Web Programming</span>
+                <div class="playlist-text">
+                <p class="no_margin">08: Web Programming</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LxDetsPQAPQ'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/LxDetsPQAPQ/0.jpg">
-                <span class="no_margin">09: SQL</span>
+                <div class="playlist-text">
+                <p class="no_margin">09: SQL</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/BSKKX2Z3dzc'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/BSKKX2Z3dzc/0.jpg">
-                <span class="no_margin">10: Life after 50</span>
+                <div class="playlist-text">
+                <p class="no_margin">10: Life after 50</p>
                 </div>
-          </div>
+                </div>  
+
+            </div>
         </div>
       </div>
 
@@ -139,6 +165,9 @@
     <div class="back">
       <a href="/resources.html">Go Back</a>
   </div>
+  <div class="powerby">
+      <p>Powered by: <a href="https://www.youtube.com/user/cs50tv" target="_blank">CS50 Harvard</a></p><br><br>
+    </div>
   </div>
 
  <!-- Footer-->
