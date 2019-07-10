@@ -41,9 +41,9 @@
   <section class="navBar_section" id="navBar_section">
     <div class="wrapper">
       <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
+        <p class="navbar-toggle" id="js-navbar-toggle">
           <i class="fa fa-bars"></i>
-        </span>
+        </p>
         <a href="index.html" class="logo"><h2>undercode.</h2></a>
         <ul class="main-nav" id="js-menu">
           <li>
@@ -74,44 +74,57 @@
         <div class="grid__content-video">
             <iframe class="video" src="https://www.youtube.com/embed/gCZ3y6mQpW0" id="vid_frame" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br /><br />
-            <p>Powered by: Harvard</p>
+           
         </div>
-        <div class="grid__content-video">
-          <div class="container">
-            <div class="sliders" id="sld">
+        <div class="grid_playlist">
+            <div class="playlist-title"><h3>Playlist:</h3></div>
+            <div class="container">
+              <div class="sliders" id="sld">
 
                 <div class="playlist_video" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/gCZ3y6mQpW0'"><img id="img-responsive" src="http://img.youtube.com/vi/gCZ3y6mQpW0/0.jpg">
-                <span class="no_margin">01: Intro & Setup</span>
+                <div class="playlist-text">
+                  <p class="no_margin">01: Intro & Setup</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FhguwBJeqWs'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/FhguwBJeqWs/0.jpg">
-                <span class="no_margin">02: Syntax Basics & Types</span>
+                <div class="playlist-text">
+                <p class="no_margin">02: Syntax Basics & Types</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/JloLGV9DmtQ'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/JloLGV9DmtQ/0.jpg">
-                <span class="no_margin">03: Control Flow</span>
+                <div class="playlist-text">
+                <p class="no_margin">03: Control Flow</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xUI5Tsl2JpY'">
                 <img id="img-responsive" src="http://img.youtube.com/vi/xUI5Tsl2JpY/0.jpg">
-                <span class="no_margin">04: Functions</span>
+                <div class="playlist-text">
+                <p class="no_margin">04: Functions</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/X0ipw1k7ygU'">
                   <img id="img-responsive" src="http://img.youtube.com/vi/X0ipw1k7ygU/0.jpg">
-                  <span class="no_margin">05: Objects</span>
+                  <div class="playlist-text">
+                  <p class="no_margin">05: Objects</p>
+                </div>
                 </div>
 
                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wKBu_dEaF9E'">
                   <img id="img-responsive" src="http://img.youtube.com/vi/wKBu_dEaF9E/0.jpg">
-                   <span class="no_margin">06: The Document Object Model (DOM)</span>
+                  <div class="playlist-text"> 
+                  <p class="no_margin">06: The Document Object Model (DOM)</p>
                  </div>
+                 </div>
+
         </div>
       </div>
-      <span class="nav previous" onclick="fPrevious()"><</span>
-      <span class="nav next" onclick="fNext()">></span>
+      
     </div>
     </div>
   </section>
@@ -119,6 +132,9 @@
     <div class="back">
       <a href="/resources.html">Go Back</a>
   </div>
+  <div class="powerby">
+      <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br><br>
+    </div>
   </div>
 
    <!-- Footer-->
