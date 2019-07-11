@@ -56,6 +56,11 @@ body {
       font-size: 12px;
   }
 
+  .partners {
+    list-style-type: none;
+    /* display: none; */
+  }
+
   .nav-links {
       text-decoration: none;
       color: grey;
@@ -85,6 +90,11 @@ body {
   }
 
   .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .partners li {
     text-align: center;
     margin: 15px auto;
   }
@@ -336,31 +346,44 @@ hr {
 }
 
 /* Partners */
-.partners {
+.partners_section {
     background-color: #f2f3f7;
     padding: 50px 0;
     margin-bottom: 100px;
 }
 
-.partner_grid {
-    max-width: 400px;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: 1fr;
+.partners li img {
+    width: 100px;
 }
 
-.icons {
-    margin: 0 auto;
+.partners li {
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+#diva {
+    margin-top: 50px;
+}
+
+/* .partner_grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+} */
+
+/* .icons {
+    margin: 10px 0;
+    text-align: center;
+} */
+
 .left {
     /* margin-left: -399px; */
     border-radius: 100%;
 }
 
-.icons img {
-    max-width: 150px;
-    max-height: 150px;
-}
+/* .icons img {
+    max-width: 50%;
+} */
 
 #partner_link {
     text-align: center;
@@ -388,7 +411,6 @@ hr {
 
 footer {
     margin: 0 0 20px;
-
 }
 
 .footer_nav {
@@ -444,6 +466,10 @@ footer {
           width: 80%;
       }
 
+      .partners {
+          margin: 10px 0;
+      }
+
     .footer_nav {
         display: flex;
         justify-content: center;
@@ -463,14 +489,25 @@ footer {
       max-width: 100%;
     }
 
+    .partner_grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        grid-gap: 5px;
+    }
+
+
+    /* .icons img {
+        max-width: 50%;
+    } */
+
     .shift {
         font-size: 14px;
     }
 
-    .icons img {
+    /* .icons img {
         max-width: 150px;
         max-height: 150px;
-    }
+    } */
 
     .newsletter #quote {
         font-size: 30px;
@@ -491,11 +528,29 @@ footer {
       align-items: center;
     }
 
+    .partner_grid {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
       .main-nav {
       display: flex;
       margin-right: 30px;
       flex-direction: row;
       justify-content: flex-end;
+      }
+
+      .partners {
+        display: flex;
+        /* margin-right: 30px; */
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      .partners {
+          margin: 0 auto;
       }
 
       .main-nav li {
