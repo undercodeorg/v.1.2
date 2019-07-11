@@ -10,15 +10,7 @@
   margin: 50px 0;
 }
 
-.background_faint {
-  height: 600px;
-    background-color: #efefef;
-    width: 100vw;
-    margin-left: calc(-50vw + 50% - 8px);
-    position: relative;
- 
-  background-color: #efefef;
-}
+
 
 .video {
   width: 100%;
