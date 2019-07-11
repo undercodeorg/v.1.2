@@ -57,7 +57,9 @@ body {
   }
 
   .partners {
+      height: ;
     list-style-type: none;
+    text-align: center;
     /* display: none; */
   }
 
@@ -365,11 +367,13 @@ hr {
     margin-top: 50px;
 }
 
-/* .partner_grid {
+/*.partner_grid {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-} */
+    height: 100px;
+    
+} 
 
 /* .icons {
     margin: 10px 0;
