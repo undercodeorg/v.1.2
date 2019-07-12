@@ -359,6 +359,10 @@ hr {
     margin-bottom: 100px;
 }
 
+.partners li img {
+    
+}
+
 .partners li {
     margin-left: 20px;
     margin-right: 20px;
@@ -702,6 +706,9 @@ display: flex;
     position: relative;
   }
 
+  .slides > div:target {
+  /*   transform: scale(0.8); */
+  }
   .author-info {
     background: rgba(0, 0, 0, 0.75);
     color: white;
@@ -752,7 +759,7 @@ display: flex;
     }
   }
 
-  @media screen and (max-width: '767px') {
+  @media screen and (max-width: 767px) {
     .slider {
         width: 300px;
         text-align: center;
