@@ -36,16 +36,10 @@
 
 @media (max-width: 768px) {
   .grid_container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     max-width: 100%;
+    margin: 0 auto;
   }
-}
-
-.sliders {
-  margin-bottom: 110px;
-  width: 1500px;
-  text-align: center;
-  overflow: hidden;
 }
 
 .playlist_video {
@@ -97,12 +91,12 @@ img#img-responsive {
 
 .vid_frame {
   margin-top: 25px;
-  width: 50%;
+  width: 80%;
   height: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
   .video_wrapper {
     text-align: center;
@@ -110,8 +104,6 @@ img#img-responsive {
   .vid_frame {
 
     max-height: 300px;
-  
-    margin-left: -40px;
     width: 90%;
   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
