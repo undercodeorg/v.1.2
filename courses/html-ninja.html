@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +14,7 @@
 
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <link rel="stylesheet" type="text/css" href="../css/slideshow.css" />
-
+  <link rel="stylesheet" type="text/css" href="../css/video/main.css">
 
   <!-- Scripts-->
 
@@ -30,25 +29,22 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-142588448-1');
   </script>
 
 </head>
-
 <body>
-  <!-- ====== navbar section ===== -->
+  <!--====== navbar section ===== -->
   <section class="navBar_section" id="navBar_section">
     <div class="wrapper">
       <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fa fa-bars"></i>
         </span>
-        <a href="index.html" class="logo">
-          <h2>undercode.</h2>
-        </a>
+        <a href="index.html" class="logo"><h2>undercode.</h2></a>
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="../index.html" class="nav-links">Home</a>
@@ -68,32 +64,23 @@
   </section> <!-- ===== navbar end ===== -->
 
   <section>
-
-    <div class="wrapper">
-      <div class="centered">
-        <h1 class="course-title">Introduction to Html</h1>
-        <hr>
-        <p class="course-description">Learn HTML5 by building your own website with this tutorial series</p>
-      </div>
-
-      <div class="video_container">
-        <div class="video--content">
-          <iframe class="video" src="https://www.youtube.com/embed/Y1BlT4_c_SU" id="vid_frame" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="wrapper top">
+        <div class="centered">
+          <h1 class="course-title">Introduction to Html</h1>
+          <hr>
+          <p class="course-description">Learn HTML5 by building your own website with this tutorial series</p>
         </div>
-        
-        <div class="video--content">
-          <div class="centered">
-
-            <div class="grid_playlist">
-              <div class="container">
+      <div class="grid_container background_faint">
+        <div class="grid__content-video">
+            <iframe class="video" src="https://www.youtube.com/embed/Y1BlT4_c_SU" id="vid_frame" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br /><br />
+           
+        </div>
+        <div class="grid_playlist">
+          <div class="playlist-title"><h3>Playlist:</h3></div>
+          <div class="container">
             <div class="sliders" id="sld">
                
-                <div class="playlist_video">
-                <div class="playlist-text">
-                <p class="no_margin">Playlist</p>
-                </div>
-                </div>
-
                 <div class="playlist_video" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Y1BlT4_c_SU'"><img id="img-responsive" src="http://img.youtube.com/vi/Y1BlT4_c_SU/0.jpg">
                 <div class="playlist-text">
                 <p class="no_margin">01: HTML Introduction</p>
@@ -213,23 +200,21 @@
                 </div>
 
         </div>
-      </div>  
-            </div>
-
-          </div> 
-        </div>
       </div>
+
+    </div>
+    </div>
+    </div>
     </div>
   </section>
-
-  <div class="wrapper centered">
-      <div class="back">
-        <a href="/resources.html">Go Back</a>
-    </div>
-    <div class="powerby">
-        <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br><br>
-      </div>
-    </div>
+  <div class="wrapper">
+    <div class="back">
+      <a href="resources.html">Go Back</a>
+  </div>
+  <div class="powerby">
+  <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br><br>
+</div>
+  </div>
 
   <!-- Footer-->
   <section>
@@ -242,19 +227,13 @@
           <li>Lisbon, Portugal</li>
           <li>
             <ul class="social_icons">
-              <li>
-                <a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a>
-              </li>
+              <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
 
-              <li>
-                <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i>
-              </li>
+              <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
 
               <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
 
-              <li>
-                <a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a>
-              </li>
+              <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </li>
         </ul>

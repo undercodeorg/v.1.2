@@ -1,46 +1,50 @@
 
-/* Mobile Styles  Iphone Plus*/ 
-body {
-  /* Red */
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+     /* Red */
+  }
+  
+.container  {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.background_faint {
+  height: 690px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50% - 8px);
+  position: relative;
 
 }
-.wrapper_top  {
-max-width: 3200px;
-width: 100%;
-margin: 0 auto;
-
+.grid__content-video > .video {
+  width: 100%;
+  margin-top: 0px;
+  max-width: 960px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
-
-.centered{
-text-align: center;
-}
-
-.vid_frame {
-width: 960;
-height: 600;
-
-}
-
-/* Play List */
-
 .grid_playlist{
-max-width: 100%; 
-margin: 50px 0;
+
+margin-top: -200px;
+max-width: 400px;
 }
 
-.grid_playlist .sliders{
-
+.container .sliders {
+  position:absolute;
+ width: 100%;
+  height: 100%;
   -webkit-overflow-scrolling: touch;
-
-  max-height: 600px;
+  overflow: auto;
+  max-height: 320px;
   overflow-y: scroll;
   margin-left: 15px;
   max-width: 360px;
   transition: all 1s ease-in-out;
 }
 
-
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -89,93 +93,8 @@ padding: 10px;
 
 #img-responsive {
   border-radius: 10px 0px 10px 0px;
-  width: 90px;
-  height: 70px;
-  margin-bottom: 10px;
-}
-
-
-#img-responsive:hover {
-  cursor: pointer;
-}
-
-
-}
- 
-/* Mobile Styles  Iphone Plus*/ 
-body {
-  /* Red */
-
-}
-.wrapper_top  {
-max-width: 3200px;
-width: 100%;
-margin: 0 auto;
-
-}
-
-.centered{
-text-align: center;
-}
-
-
-.vid_frame {
-width: 960;
-height: 600;
-
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #666666;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-.playlist-title{
-max-width: 400px;
-padding: 10px;
-}
-
-.grid_playlist .playlist_video{
-  padding-left: -150px;
-  float: left;
   width: 100%;
-  max-width: 380px;
   height: 60px;
-  border-radius: 10px;
-  background: #fefeff;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  
-}
-.grid_playlist .playlist_video > img {
-  font-size: 15px;
-  font-weight: 400;
-  float: left;
-  margin-right: 10px
-}
-.grid_playlist .playlist_video .playlist-text > p {
-  
-  max-width: 500px;
-  font-size: 15px;
-  font-weight: 400; 
-  text-align: left;
-  vertical-align: middle;
-  line-height: 60px;  
-}
-
-
-#img-responsive {
-  border-radius: 10px 0px 10px 0px;
-  width: 90px;
-  height: 70px;
-  margin-bottom: 10px;
 }
 
 
@@ -183,229 +102,248 @@ padding: 10px;
   cursor: pointer;
 }
 
+.vid-container {
+  width: 100%;
+}
+
+.powerby{
+  margin-top: -30px;
+  margin-bottom: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+}
 
 /* Tablet Styles */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   body {
-    /* Red */
+     /* Yellow */
+  }
   
- }
- .wrapper_top  {
-  max-width: 3200px;
+.container  {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
-  
-}
-
-.centered{
   text-align: center;
 }
 
-.vid_frame {
-  width: 960;
-  height: 600;
+.background_faint {
+    height: 550px;
+    background-color: #efefef;
+    width: 100vw;
+    margin-left: calc(-50vw + 50% - 8px);
+    position: relative;
  
-  }
+}
+.grid__content-video > .video {
+  width: 100%;
+  margin-top: 35px;
+  margin-left: 10px;
+  max-width: 860px;
+  height: 440px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #666666;
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .playlist-title{
-  max-width: 400px;
-  padding: 10px;
-  }
-  
-  .grid_playlist .playlist_video{
-    padding-left: -150px;
-    float: left;
-    width: 100%;
-    max-width: 380px;
-    height: 60px;
-    border-radius: 10px;
-    background: #fefeff;
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    
-  }
-  .grid_playlist .playlist_video > img {
-    font-size: 15px;
-    font-weight: 400;
-    float: left;
-    margin-right: 10px
-  }
-  .grid_playlist .playlist_video .playlist-text > p {
-    
-    max-width: 500px;
-    font-size: 15px;
-    font-weight: 400; 
-    text-align: left;
-    vertical-align: middle;
-    line-height: 60px;  
-  }
-  
-  
-  #img-responsive {
-    border-radius: 10px 0px 10px 0px;
-    width: 90px;
-    height: 70px;
-    margin-bottom: 10px;
-  }
-  
-  
-  #img-responsive:hover {
-    cursor: pointer;
-  }
-  
+}
+.grid_playlist{
 
-  }
+margin-top: 40px;
+max-width: 400px;
+}
+
+.container .sliders {
+  position:absolute;
+ width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  max-height: 390px;
+  overflow-y: scroll;
+  max-width: 360px;
+  transition: all 1s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #666666;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.playlist-title{
+max-width: 400px;
+padding: 10px;
+}
+
+.grid_playlist .playlist_video{
+  padding-left: -150px;
+  float: left;
+  width: 100%;
+  max-width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  background: #fefeff;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  
+}
+.grid_playlist .playlist_video > img {
+  
+  float: left;
+  margin-right: 10px;
+  height: 40px;
+}
+.grid_playlist .playlist_video .playlist-text > p {
+  
+  max-width: 300px;
+  font-size: 13px;
+  font-weight: 400; 
+  text-align: left;
+  vertical-align: middle;
+  line-height: 60px;  
+  cursor: pointer;
+}
+
+
+#img-responsive {
+  border-radius: 10px 0px 10px 0px;
+  width: 50%;
+  height: 50%;
+}
+
+
+#img-responsive:hover {
+  cursor: pointer;
+}
+
+.vid-container {
+  width: 100%;
+}
+
+.powerby{
+  margin-top: -30px;
+  margin-bottom: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
- .wrapper_top  {
-  max-width: 3200px;
-  width: 100%;
-  margin: 0 auto;
-  
-}
-
-.video_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: space-between;
-  margin: 80px 0;
-}
-
-.video--content {
-  width: 100%;
-  padding: 0 25px 15px;
-}
-
-.video {
-  width: 100%;
-  height: 500px;
-}
-
-@media screen and (max-width: 768px) {
-  .video--content {
-    width: 100%;
+  body {
+    /* Blue */
   }
-}
-
-.centered{
+  
+.container  {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   text-align: center;
 }
+.background_faint {
+  height: 600px;
+  background-color: #efefef;
+  width: 100vw;
+  margin-left: calc(-50vw + 50% - 8px);
+  position: relative;
 
-.container {
+}
+.grid__content-video > .video {
+  width: 100%;
+  margin-top: 10px;
+  max-width: 960px;
+  height: 540px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.grid_playlist{
+
+margin-top: 30px;
+max-width: 400px;
+}
+
+.container .sliders {
+  position:absolute;
+ width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  max-height: 490px;
+  overflow-y: scroll;
+  max-width: 400px;
+  transition: all 1s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #666666;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.playlist-title{
+max-width: 400px;
+padding: 10px;
+}
+
+.grid_playlist .playlist_video{
+  padding-left: -150px;
+  float: left;
+  width: 100%;
+  max-width: 380px;
+  height: 60px;
+  border-radius: 10px;
+  background: #fefeff;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  
+}
+.grid_playlist .playlist_video > img {
+  font-size: 15px;
+  font-weight: 400;
+  float: left;
+  margin-right: 10px
+}
+.grid_playlist .playlist_video .playlist-text > p {
+  
+  max-width: 500px;
+  font-size: 15px;
+  font-weight: 400; 
+  text-align: left;
+  vertical-align: middle;
+  line-height: 60px;  
+}
+
+
+#img-responsive {
+  border-radius: 10px 0px 10px 0px;
+  width: 100%;
+  height: 60px;
+}
+
+
+#img-responsive:hover {
+  cursor: pointer;
+}
+
+.vid-container {
   width: 100%;
 }
 
-.vid_frame {
-width: 100%;
-height: 100%;
-  }
-
-/* Play List */
-
-@media (max-width: 768px) {
-  .video {
-    width: 100%;
-  }
-
-  #sld {
-    width: 100%;
-  }
-
-  .grid_playlist .playlist_video {
-    max-width: 100%;
-  }
-}
-
-
-.playlist_video {
-  margin: 10px 0;
-}
-  
-.grid_playlist .sliders{
-  
-    -webkit-overflow-scrolling: touch;
-    height: 600px;
-    overflow-y: scroll;
-    max-width: 100%;
-    transition: all 1s ease-in-out;
-}
- 
-  
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #666666;
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .playlist-title{
-  max-width: 400px;
-  padding: 10px;
-  }
-  
-  .grid_playlist .playlist_video{
-    width: 100%;
-    max-width: 100%;
-    height: 70px;
-    border-radius: 10px;
-    background: #fefeff;
-    
-  }
-  .grid_playlist .playlist_video > img {
-    font-size: 15px;
-    font-weight: 400;
-    float: left;
-    margin-right: 10px
-  }
-  .grid_playlist .playlist_video .playlist-text > p {
-    
-    max-width: 500px;
-    font-size: 15px;
-    font-weight: 400; 
-    text-align: left;
-    vertical-align: middle;
-    line-height: 60px;  
-    cursor: pointer;
-  }
-  
-  #img-responsive {
-    border-radius: 10px 0px 10px 0px;
-    width: 90px;
-    height: 70px;
-    margin-bottom: 10px;
-  }
-  
-  
-  #img-responsive:hover {
-    cursor: pointer;
-  }
-  
-
-/* Power by & Back */
 .powerby{
- 
- margin-bottom: 30px;
- text-align: center;
- vertical-align: middle;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  text-align: center;
+  vertical-align: middle;
 }
 }
