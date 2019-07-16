@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +7,7 @@
 
   <!-- Website ICON -->
   <title>Undercode</title>
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="icon" type="image/png" href=".img/logo.png">
 
   <!-- Main CSS -->
 
@@ -14,7 +15,7 @@
 
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <link rel="stylesheet" type="text/css" href="../css/slideshow.css" />
-  <link rel="stylesheet" type="text/css" href="../css/video/main.css">
+
 
   <!-- Scripts-->
 
@@ -29,22 +30,25 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-142588448-1');
   </script>
 
 </head>
+
 <body>
-  <!--====== navbar section ===== -->
+  <!-- ====== navbar section ===== -->
   <section class="navBar_section" id="navBar_section">
     <div class="wrapper">
       <nav class="navbar">
-        <p class="navbar-toggle" id="js-navbar-toggle">
+        <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fa fa-bars"></i>
-        </p>
-        <a href="index.html" class="logo"><h2>undercode.</h2></a>
+        </span>
+        <a href="/index.html" class="logo">
+          <h2>undercode.</h2>
+        </a>
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="../index.html" class="nav-links">Home</a>
@@ -64,239 +68,301 @@
   </section> <!-- ===== navbar end ===== -->
 
   <section>
-      <div class="wrapper top">
-          <div class="centered">
-            <h1 class="course-title"><span>AngularJS tutorial</span></h1>
-            <hr>
-            <p class="course-description">AngularJS tutorial series for beginners</p>
-          </div>
-        <div class="grid_container background_faint">
-          <div class="grid__content-video">
-              <iframe class="video" src="https://www.youtube.com/embed/FlUCU13dJyo" id="vid_frame" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <br /><br />
-              
-          </div>
-          <div class="grid_playlist">
-              <div class="playlist-title"><h3>Playlist:</h3></div>
-              <div class="container">
-                <div class="sliders" id="sld">
 
-                  <div class="playlist_video" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FlUCU13dJyo'"><img id="img-responsive" src="http://img.youtube.com/vi/FlUCU13dJyo/0.jpg">
-                  <div class="playlist-text">
-                    <p class="no_margin">01: HTML Introduction</p>
-                  </div>
-                  </div>
+    <div class="wrapper-video-playlist">
+      <div class="header-centered">
+        <h1 class="course-title">AngularJS tutorial</h1>
+        <hr>
+        <p class="course-description">AngularJS tutorial series for beginners</p>
+      </div>
 
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CQE1cBsJ_Gk'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/CQE1cBsJ_Gk/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">02: MVC Architecture</p>
-                  </div>
-                  </div>
+      <div class="video_container flex-direction">
+        <div class="video-content">
+          <iframe class="video" src="https://www.youtube.com/embed/FlUCU13dJyo" id="vid_frame" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FlbtIHcGnPE'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/FlbtIHcGnPE/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">03: Downloading AngularJS</p>
-                  </div>
-                  </div>
+       <div class="playlist-content">
+        <ul>
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FlUCU13dJyo'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/FlUCU13dJyo/0.jpg">
 
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/GLdRo9CQVHA'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/GLdRo9CQVHA/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">04: 2-Way Data Binding</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Wm1Zj_VLbpk'">
-                    <img id="img-responsive" src="http://img.youtube.com/vi/Wm1Zj_VLbpk/0.jpg">
-                  <div class="playlist-text">
-                    <p class="no_margin">05: Introduction to Directives</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xB-OkaRilZo'">
-                    <img id="img-responsive" src="http://img.youtube.com/vi/xB-OkaRilZo/0.jpg">
-                   <div class="playlist-text">
-                    <p class="no_margin">06: Expressions</p>
-                   </div>
-                   </div>
-
-                   <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/oRGRpjU_duw'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/oRGRpjU_duw/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">07: ng-repeat directive</p>
-                  </div>
-                  </div>
-
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ybnw5JwBk8g'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/ybnw5JwBk8g/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">08: Modules</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/QAUjWaQrY4A'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/QAUjWaQrY4A/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">09: Controllers</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/OCbJ12rJwnE'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/OCbJ12rJwnE/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">10: Filters</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/S-uYRHtXxgk'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/S-uYRHtXxgk/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">11: ng-include directive</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/kSSQYgQ6aEY'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/kSSQYgQ6aEY/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">12: ng-show directive</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/e6YjzckfQpg'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/e6YjzckfQpg/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">13: ng-click directive</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/OL8JIQEPSt0'">
-                    <img id="img-responsive" src="http://img.youtube.com/vi/OL8JIQEPSt0/0.jpg">
-                  <div class="playlist-text">
-                    <p class="no_margin">14: ng-submit directive</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/HR2MuTRuoIE'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/HR2MuTRuoIE/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">15: ng-src directive</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/y7FojM9BTdE'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/y7FojM9BTdE/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">16: Views and Routes</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/5SXog1helAY'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/5SXog1helAY/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">17: JSON and $http</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/R_okHflzgm0'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/R_okHflzgm0/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">18: Custom Directives</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/SmFjEyd1iNU'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/SmFjEyd1iNU/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">19: Transclude & Replace</p>
-                  </div>
-                  </div>
-
-              <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/r5g5foLA0UI'">
-              <img id="img-responsive" src="http://img.youtube.com/vi/r5g5foLA0UI/0.jpg">
-              <div class="playlist-text">
-              <p class="no_margin">20: Animations (part 1)</p>
-              </div>
-              </div>
-
-              <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/iWS7z7ur8Ls'">
-              <img id="img-responsive" src="http://img.youtube.com/vi/iWS7z7ur8Ls/0.jpg">
-              <div class="playlist-text">
-              <p class="no_margin">21: Animations (part 2)</p>
-              </div>
-              </div>
-
-              <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/GkjaFQAhM7o'">
-              <img id="img-responsive" src="http://img.youtube.com/vi/GkjaFQAhM7o/0.jpg">
-              <div class="playlist-text">
-              <p class="no_margin">22: Form Validation (part 1)</p>
-              </div>
-              </div>
-
-              <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jHhtaJAdYv8'">
-              <img id="img-responsive" src="http://img.youtube.com/vi/jHhtaJAdYv8/0.jpg">
-              <div class="playlist-text">
-              <p class="no_margin">23: Form Validation (part 2)</p>
-              </div>
-              </div>
-
-              <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/NUBooHYKOeY'">
-              <img id="img-responsive" src="http://img.youtube.com/vi/NUBooHYKOeY/0.jpg">
-              <div class="playlist-text">
-              <p class="no_margin">24: Location Service</p>
-              </div>
-              </div>
-
-              <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XiVtu58xVJY'">
-              <img id="img-responsive" src="http://img.youtube.com/vi/XiVtu58xVJY/0.jpg">
-              <div class="playlist-text">
-              <p class="no_margin">25: Pretty URL's</p>
-              </div>
-              </div>
+              <p class="playlist-text">01: HTML Introduction</p>
             </div>
+          </li>
 
-        </div>
-        </div>
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CQE1cBsJ_Gk'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/CQE1cBsJ_Gk/0.jpg">
+
+              <p class="playlist-text">02: MVC Architecture</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FlbtIHcGnPE'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/FlbtIHcGnPE/0.jpg">
+
+              <p class="playlist-text">03: Downloading AngularJS</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/GLdRo9CQVHA'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/GLdRo9CQVHA/0.jpg">
+
+              <p class="playlist-text">04: 2-Way Data Binding</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Wm1Zj_VLbpk'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/Wm1Zj_VLbpk/0.jpg">
+
+              <p class="playlist-text">05: Introduction to Directives</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xB-OkaRilZo'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/xB-OkaRilZo/0.jpg">
+
+              <p class="playlist-text">06: Expressions</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/oRGRpjU_duw'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/oRGRpjU_duw/0.jpg">
+
+              <p class="playlist-text">07: ng-repeat directive</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ybnw5JwBk8g'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/ybnw5JwBk8g/0.jpg">
+
+              <p class="playlist-text">08: Modules</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/QAUjWaQrY4A'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/QAUjWaQrY4A/0.jpg">
+
+              <p class="playlist-text">09: Controllers</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/OCbJ12rJwnE'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/OCbJ12rJwnE/0.jpg">
+
+              <p class="playlist-text">10: Filters</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/S-uYRHtXxgk'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/S-uYRHtXxgk/0.jpg">
+
+              <p class="playlist-text">11: ng-include directive</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/kSSQYgQ6aEY'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/kSSQYgQ6aEY/0.jpg">
+
+              <p class="playlist-text">12: ng-show directive</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/e6YjzckfQpg'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/e6YjzckfQpg/0.jpg">
+
+              <p class="playlist-text">13: ng-click directive</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/OL8JIQEPSt0'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/OL8JIQEPSt0/0.jpg">
+
+              <p class="playlist-text">14: ng-submit directive</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/HR2MuTRuoIE'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/HR2MuTRuoIE/0.jpg">
+
+              <p class="playlist-text">15: ng-src directive</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/y7FojM9BTdE'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/y7FojM9BTdE/0.jpg">
+
+              <p class="playlist-text">16: Views and Routes</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/5SXog1helAY'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/5SXog1helAY/0.jpg">
+
+              <p class="playlist-text">17: JSON and $http</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/R_okHflzgm0'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/R_okHflzgm0/0.jpg">
+
+              <p class="playlist-text">18: Custom Directives</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/SmFjEyd1iNU'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/SmFjEyd1iNU/0.jpg">
+
+              <p class="playlist-text">19: Transclude & Replace</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/r5g5foLA0UI'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/r5g5foLA0UI/0.jpg">
+
+              <p class="playlist-text">20: Animations (part 1)</p>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/iWS7z7ur8Ls'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/iWS7z7ur8Ls/0.jpg">
+
+              <p class="playlist-text">21: Animations (part 2)</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/GkjaFQAhM7o'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/GkjaFQAhM7o/0.jpg">
+
+              <p class="playlist-text">22: Form Validation (part 1)</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jHhtaJAdYv8'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/jHhtaJAdYv8/0.jpg">
+
+              <p class="playlist-text">23: Form Validation (part 2)</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/NUBooHYKOeY'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/NUBooHYKOeY/0.jpg">
+
+              <p class="playlist-text">24: Location Service</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XiVtu58xVJY'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/XiVtu58xVJY/0.jpg">
+
+              <p class="playlist-text">25: Pretty URL's</p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div> 
+
       </div>
-      </div>
-    </section>
-    <div class="wrapper">
-      <div class="back">
-        <a href="/resources.html">Go Back</a>
     </div>
+
+  </section>
+
+  <div class="wrapper-backbtn">
     <div class="powerby">
-        <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br><br>
-      </div>
+      <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net
+          Ninja</a></p><br><br>
     </div>
+    <div class="back">
+      <a href="/resources.html">Courses Index</a>
+    </div>
+  </div>
 
-    <section>
-      <footer>
-        <div class="wrapper">
-          <ul class="footer_nav">
-            <li>2019 by <a href="../index.html">undecode</a></li>
-            <li><a href="../data-policy.html">Data-Policy</a></li>
-            <li>support@undercode.com</li>
-            <li>Lisbon, Portugal</li>
-            <li>
-              <ul class="social_icons">
-                <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
-  
-                <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
-  
-                <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
-  
-                <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </footer>
-  
-      <script type="text/javascript" src="../js/app.js"></script>
-  
-    <!-- ===== nav script end ===== -->
-    </body>
-  
-    </html>
+  <!-- Footer-->
+  <section>
+    <footer>
+      <div class="wrapper">
+        <ul class="footer_nav">
+          <li>2019 by <a href="../index.html">undecode</a></li>
+          <li><a href="../data-policy.html">Data-Policy</a></li>
+          <li>support@undercode.com</li>
+          <li>Lisbon, Portugal</li>
+          <li>
+            <ul class="social_icons">
+              <li>
+                <a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i>
+              </li>
+
+              <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
+
+              <li>
+                <a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </section>
+
+
+  <script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+
+</html>

@@ -2,4 +2,192 @@
 
 /* COMMENT WHAT A PILE OF CODE DOES! DON'T WANNA GET STUCK IN ANOTHER RUBIK PUZZLE :) */
 
+/* Wrapper */
+
+.wrapper-video-playlist{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* Heeader */
+
+.header-centered{
+    margin: 20px;
+    text-align: center;
+}
+
+/* Video - Playlist Containers */ 
+
+.video_container{
+    display: flex;   
+    background: #e6e6e6;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+    
+}
+
+.flex-direction{
+    flex-direction:row;
+  }
+
+.playlist-content{
+    float: right;
+    width: 300px;
+    overflow-y: scroll;
+    height: 600px;
+    margin: 15 0 30 0;
+
+}
+
+.video-content{
+    float: left;
+    width: calc(100% - 350px);
+    
+}
+
+/* Video Content */
+
+.video{ 
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    
+}
+
+/* Playlist Content */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+
+.playlist_video{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-size: 14px; 
+    font-weight: 14px;
+}
+
+.playlist_video > p {
+margin-top:40px ;
+margin-left: 10px; 
+}
+
+.playlist_video img{
+    max-width: 80px;
+    max-height: 80px ;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* courses Index */
+
+.wrapper-backbtn{
+    text-align: center;
+    margin-top: 30px;
+}
+
 /* MEDIA QUERIES SECTION */
+
+@media (max-width: 999px) {
+
+    /* Flex Direction*/
+
+    .flex-direction{
+        flex-direction:column;
+        }
+
+        .video_container{
+            margin: 20px; 
+            background: none;    
+            -webkit-box-shadow: none;
+            -moz-box-shadow:none;
+            box-shadow: none;         
+        }
+        /* Video Content */
+
+        .video-content{
+            float: left;
+            width: calc(100%);
+            height: 500px;
+            
+        } 
+        .video{ 
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
+
+
+        /*Playlist Content */
+
+        .playlist-content{
+        
+          width: 100%;
+          
+          overflow-y: scroll;
+          height: 400px;
+          
+        
+        }
+
+        .playlist-content .playlist_video {
+            
+          justify-content: center;
+    
+        }
+
+        .playlist-content .playlist_video > ul{
+            
+            background: lightblue;
+            border-radius: 10px;    
+        }
+
+
+
+
+
+    /* courses Index */
+    
+    .wrapper-backbtn{
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+}
+
+@media (max-width: 414px) {
+
+    .video-content{
+        float: left;
+        width: calc(100%);
+        height: 300px;
+        
+    } 
+    .video{ 
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+}
+
+/* Back button CSS */
+.back {
+    margin: 0 0 50px;
+}

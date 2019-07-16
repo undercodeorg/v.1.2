@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +7,7 @@
 
   <!-- Website ICON -->
   <title>Undercode</title>
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="icon" type="image/png" href=".img/logo.png">
 
   <!-- Main CSS -->
 
@@ -14,7 +15,7 @@
 
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <link rel="stylesheet" type="text/css" href="../css/slideshow.css" />
-  <link rel="stylesheet" type="text/css" href="../css/video/main.css">
+
 
   <!-- Scripts-->
 
@@ -29,22 +30,25 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-142588448-1');
   </script>
 
 </head>
+
 <body>
-  <!--====== navbar section ===== -->
+  <!-- ====== navbar section ===== -->
   <section class="navBar_section" id="navBar_section">
     <div class="wrapper">
       <nav class="navbar">
-        <p class="navbar-toggle" id="js-navbar-toggle">
+        <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fa fa-bars"></i>
-        </p>
-        <a href="index.html" class="logo"><h2>undercode.</h2></a>
+        </span>
+        <a href="/index.html" class="logo">
+          <h2>undercode.</h2>
+        </a>
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="../index.html" class="nav-links">Home</a>
@@ -64,81 +68,97 @@
   </section> <!-- ===== navbar end ===== -->
 
   <section>
-    <div class="wrapper top">
-        <div class="centered">
-          <h1 class="course-title"><span>Modern JavaScript</span></h1>
-          <hr>
-          <p class="course-description">Learn how the Modern JavaScipt works, join this awesome journey</p>
-        </div>
-      <div class="grid_container background_faint">
-        <div class="grid__content-video">
-            <iframe class="video" src="https://www.youtube.com/embed/gCZ3y6mQpW0" id="vid_frame" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br /><br />
-           
-        </div>
-        <div class="grid_playlist">
-            <div class="playlist-title"><h3>Playlist:</h3></div>
-            <div class="container">
-              <div class="sliders" id="sld">
 
-                <div class="playlist_video" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/gCZ3y6mQpW0'"><img id="img-responsive" src="http://img.youtube.com/vi/gCZ3y6mQpW0/0.jpg">
-                <div class="playlist-text">
-                  <p class="no_margin">01: Intro & Setup</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FhguwBJeqWs'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/FhguwBJeqWs/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">02: Syntax Basics & Types</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/JloLGV9DmtQ'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/JloLGV9DmtQ/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">03: Control Flow</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xUI5Tsl2JpY'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/xUI5Tsl2JpY/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">04: Functions</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/X0ipw1k7ygU'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/X0ipw1k7ygU/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">05: Objects</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wKBu_dEaF9E'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/wKBu_dEaF9E/0.jpg">
-                  <div class="playlist-text"> 
-                  <p class="no_margin">06: The Document Object Model (DOM)</p>
-                 </div>
-                 </div>
-
-        </div>
+    <div class="wrapper-video-playlist">
+      <div class="header-centered">
+        <h1 class="course-title">Modern JavaScript</h1>
+        <hr>
+        <p class="course-description">Learn how the Modern JavaScipt works, join this awesome journey</p>
       </div>
-      
+
+      <div class="video_container flex-direction">
+        <div class="video-content">
+          <iframe class="video" src="https://www.youtube.com/embed/gCZ3y6mQpW0" id="vid_frame" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+       <div class="playlist-content">
+        <ul>
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/gCZ3y6mQpW0'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/gCZ3y6mQpW0/0.jpg">
+
+              <p class="playlist-text">01: Intro & Setup</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FhguwBJeqWs'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/FhguwBJeqWs/0.jpg">
+
+              <p class="playlist-text">02: Syntax Basics & Types</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/JloLGV9DmtQ'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/JloLGV9DmtQ/0.jpg">
+
+              <p class="playlist-text">03: Control Flow</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xUI5Tsl2JpY'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/xUI5Tsl2JpY/0.jpg">
+
+              <p class="playlist-text">04: Functions</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/X0ipw1k7ygU'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/X0ipw1k7ygU/0.jpg">
+
+              <p class="playlist-text">05: Objects</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wKBu_dEaF9E'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/wKBu_dEaF9E/0.jpg">
+
+              <p class="playlist-text">06: The Document Object Model (DOM)</p>
+            </div>
+          </li>
+          
+        </ul>
+
+      </div> 
+
+      </div>
     </div>
-    </div>
+
   </section>
-  <div class="wrapper">
+
+  <div class="wrapper-backbtn">
+    <div class="powerby">
+      <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net
+          Ninja</a></p><br><br>
+    </div>
     <div class="back">
-      <a href="/resources.html">Go Back</a>
-  </div>
-  <div class="powerby">
-      <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br><br>
+      <a href="/resources.html">Courses Index</a>
     </div>
   </div>
 
-   <!-- Footer-->
-   <section>
+  <!-- Footer-->
+  <section>
     <footer>
       <div class="wrapper">
         <ul class="footer_nav">
@@ -148,22 +168,29 @@
           <li>Lisbon, Portugal</li>
           <li>
             <ul class="social_icons">
-              <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
+              <li>
+                <a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a>
+              </li>
 
-              <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
+              <li>
+                <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i>
+              </li>
 
               <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
 
-              <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
+              <li>
+                <a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a>
+              </li>
             </ul>
           </li>
         </ul>
       </div>
     </footer>
+  </section>
 
-    <script type="text/javascript" src="../js/app.js"></script>
 
-  <!-- ===== nav script end ===== -->
-  </body>
+  <script type="text/javascript" src="../js/app.js"></script>
 
-  </html>
+</body>
+
+</html>

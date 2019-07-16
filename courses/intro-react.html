@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +7,7 @@
 
   <!-- Website ICON -->
   <title>Undercode</title>
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="icon" type="image/png" href=".img/logo.png">
 
   <!-- Main CSS -->
 
@@ -14,7 +15,7 @@
 
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <link rel="stylesheet" type="text/css" href="../css/slideshow.css" />
-  <link rel="stylesheet" type="text/css" href="../css/video/main.css">
+
 
   <!-- Scripts-->
 
@@ -29,22 +30,25 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-142588448-1');
   </script>
 
 </head>
+
 <body>
-  <!--====== navbar section ===== -->
+  <!-- ====== navbar section ===== -->
   <section class="navBar_section" id="navBar_section">
     <div class="wrapper">
       <nav class="navbar">
-        <p class="navbar-toggle" id="js-navbar-toggle">
+        <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fa fa-bars"></i>
-        </p>
-        <a href="index.html" class="logo"><h2>undercode.</h2></a>
+        </span>
+        <a href="/index.html" class="logo">
+          <h2>undercode.</h2>
+        </a>
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="../index.html" class="nav-links">Home</a>
@@ -64,178 +68,229 @@
   </section> <!-- ===== navbar end ===== -->
 
   <section>
-    <div class="wrapper top">
-      <div class="centered">
-        <h1 class="course-title"><span>Introduction to React</span></h1>
+
+    <div class="wrapper-video-playlist">
+      <div class="header-centered">
+        <h1 class="course-title">Introduction to ReactJS</h1>
         <hr>
-        <p class="course-description">In this series I'll show you why React is such and awesome framework</p>
+        <p class="course-description">In this series I'll show you why React is such an awesome framework</p>
       </div>
-      <div class="grid_container background_faint">
-        <div class="grid__content-video">
-              <iframe class="video" src="https://www.youtube.com/embed/yZ0f1Apb5CU" id="vid_frame" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <br /><br />
-              
-          </div>
-          <div class="grid_playlist">
-              <div class="playlist-title"><h3>Playlist:</h3></div>
-              <div class="container">
-                <div class="sliders" id="sld">
 
-                  <div class="playlist_video" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yZ0f1Apb5CU'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/yZ0f1Apb5CU/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">01: Introduction</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/VAo2Ficohe4'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/VAo2Ficohe4/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">02: Course Files</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/f7TmMBMLJ90'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/f7TmMBMLJ90/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">03: Setup with & without Webpack</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/nrH9otBNqYc'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/nrH9otBNqYc/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">04: React Components</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/TRPfZ4INN9w'">
-                    <img id="img-responsive" src="http://img.youtube.com/vi/TRPfZ4INN9w/0.jpg">
-                    <div class="playlist-text">
-                    <p class="no_margin">05: React Dev Tools</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/gEXAGvu8EKQ'">
-                    <img id="img-responsive" src="http://img.youtube.com/vi/gEXAGvu8EKQ/0.jpg">
-                    <div class="playlist-text"> 
-                    <p class="no_margin">06: Props</p>
-                   </div>
-                   </div>
-
-                   <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/EKOyhW754hA'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/EKOyhW754hA/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">07: State</p>
-                  </div>
-                  </div>
-
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/haT0KtaCuNU'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/haT0KtaCuNU/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">08: Changing DOM and the Virtual DOM</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/R12AqSuaRGs'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/R12AqSuaRGs/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">09: Cycling through data</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/VLrGSRcxpHw'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/VLrGSRcxpHw/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">10: Nesting Components</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/iUPWpXsmuaM'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/iUPWpXsmuaM/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">11: Handling Events</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XGD2_76mzWI'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/XGD2_76mzWI/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">12: Modularizing Your Code</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/bj2yyrl8L14'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/bj2yyrl8L14/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">13: Input refs</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/uMtK7f0TVq4'">
-                    <img id="img-responsive" src="http://img.youtube.com/vi/uMtK7f0TVq4/0.jpg">
-                    <div class="playlist-text">
-                    <p class="no_margin">14: Component Life-cycle Methods</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/W6m2qUCYLuk'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/W6m2qUCYLuk/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">15: Routing</p>
-                  </div>
-                  </div>
-
-                  <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/x7Iu9At6BT0'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/x7Iu9At6BT0/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">16: Route Links</p>
-                  </div>
-                  </div>
-
-        </div>
+      <div class="video_container flex-direction">
+        <div class="video-content">
+          <iframe class="video" src="https://www.youtube.com/embed/yZ0f1Apb5CU" id="vid_frame" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
+       <div class="playlist-content">
+        <ul>
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yZ0f1Apb5CU'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/yZ0f1Apb5CU/0.jpg">
+
+              <p class="playlist-text">01: Introduction</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/VAo2Ficohe4'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/VAo2Ficohe4/0.jpg">
+
+              <p class="playlist-text">02: Course Files</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/f7TmMBMLJ90'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/f7TmMBMLJ90/0.jpg">
+
+              <p class="playlist-text">03: Setup with & without Webpack</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/nrH9otBNqYc'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/nrH9otBNqYc/0.jpg">
+
+              <p class="playlist-text">04: React Components</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/TRPfZ4INN9w'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/TRPfZ4INN9w/0.jpg">
+
+              <p class="playlist-text">05: React Dev Tools</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/gEXAGvu8EKQ'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/gEXAGvu8EKQ/0.jpg">
+
+              <p class="playlist-text">06: Props</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/EKOyhW754hA'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/EKOyhW754hA/0.jpg">
+
+              <p class="playlist-text">07: State</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/haT0KtaCuNU'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/haT0KtaCuNU/0.jpg">
+
+              <p class="playlist-text">08: Changing DOM and the Virtual DOM</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/R12AqSuaRGs'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/R12AqSuaRGs/0.jpg">
+
+              <p class="playlist-text">09: Cycling through data</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/VLrGSRcxpHw'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/VLrGSRcxpHw/0.jpg">
+
+              <p class="playlist-text">10: Nesting Components</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/iUPWpXsmuaM'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/iUPWpXsmuaM/0.jpg">
+
+              <p class="playlist-text">11: Handling Events</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XGD2_76mzWI'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/XGD2_76mzWI/0.jpg">
+
+              <p class="playlist-text">12: Modularizing Your Code</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/bj2yyrl8L14'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/bj2yyrl8L14/0.jpg">
+
+              <p class="playlist-text">13: Input refs</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/uMtK7f0TVq4'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/uMtK7f0TVq4/0.jpg">
+
+              <p class="playlist-text">14: Component Life-cycle Methods</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/W6m2qUCYLuk'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/W6m2qUCYLuk/0.jpg">
+
+              <p class="playlist-text">15: Routing</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/x7Iu9At6BT0'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/x7Iu9At6BT0/0.jpg">
+
+              <p class="playlist-text">16: Route Links</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xuA8kt2xnv8'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/xuA8kt2xnv8/0.jpg">
+
+              <p class="playlist-text">17: What To Do Next</p>
+            </div>
+          </li>
+
+
+        </ul>
+
+      </div> 
+
       </div>
-      </div>
-    </section>
-    <div class="wrapper">
-      <div class="back">
-        <a href="/resources.html">Go Back</a>
     </div>
+
+  </section>
+
+  <div class="wrapper-backbtn">
     <div class="powerby">
-        <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br><br>
+      <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net
+          Ninja</a></p><br><br>
+    </div>
+    <div class="back">
+      <a href="/resources.html">Courses Index</a>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <section>
+    <footer>
+      <div class="wrapper">
+        <ul class="footer_nav">
+          <li>2019 by <a href="../index.html">undecode</a></li>
+          <li><a href="../data-policy.html">Data-Policy</a></li>
+          <li>support@undercode.com</li>
+          <li>Lisbon, Portugal</li>
+          <li>
+            <ul class="social_icons">
+              <li>
+                <a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i>
+              </li>
+
+              <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
+
+              <li>
+                <a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </div>
+    </footer>
+  </section>
 
- <!-- Footer-->
- <section>
-  <footer>
-    <div class="wrapper">
-      <ul class="footer_nav">
-        <li>2019 by <a href="../index.html">undecode</a></li>
-        <li><a href="../data-policy.html">Data-Policy</a></li>
-        <li>support@undercode.com</li>
-        <li>Lisbon, Portugal</li>
-        <li>
-          <ul class="social_icons">
-            <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
-
-            <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
-
-            <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
-
-            <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </footer>
 
   <script type="text/javascript" src="../js/app.js"></script>
 
-<!-- ===== nav script end ===== -->
 </body>
 
 </html>

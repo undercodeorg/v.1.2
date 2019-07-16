@@ -1,0 +1,12 @@
+center_two {
+    text-align: center;
+}
+
+.vid-container {
+    margin-top: 20px;
+}
+
+.vid-container iframe {
+    width: 100%;
+    height: 90%;
+}
