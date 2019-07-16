@@ -10,3 +10,28 @@ center_two {
     width: 100%;
     height: 90%;
 }
+
+/* Iphone 7/8/9 plus and X */
+@media (max-width: 999px) {
+    .vid-container iframe {
+        height: 50%;
+    }
+}
+
+/* Iphone 5/5E/6 */
+@media (max-width: 414px) {
+    .vid-container iframe {
+        height: 40%;
+    }
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
