@@ -184,10 +184,7 @@ body {
     margin-left: 50px;
 }
 
-.video {
-    width: 100%;
-    height: 80%;
-}
+
 
 .back {
     margin: 20px 0;
@@ -359,9 +356,6 @@ hr {
     margin-bottom: 100px;
 }
 
-.partners li img {
-    
-}
 
 .partners li {
     margin-left: 20px;
@@ -706,9 +700,6 @@ display: flex;
     position: relative;
   }
 
-  .slides > div:target {
-  /*   transform: scale(0.8); */
-  }
   .author-info {
     background: rgba(0, 0, 0, 0.75);
     color: white;
@@ -759,11 +750,10 @@ display: flex;
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     .slider {
         width: 300px;
         text-align: center;
         overflow: hidden;
       }
-
 }

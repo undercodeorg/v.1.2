@@ -1,349 +1,193 @@
+/* SLIDESHOW CSS RULES */
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
-     /* Red */
+/* COMMENT WHAT A PILE OF CODE DOES! DON'T WANNA GET STUCK IN ANOTHER RUBIK PUZZLE :) */
+
+/* Wrapper */
+
+.wrapper-video-playlist{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* Heeader */
+
+.header-centered{
+    margin: 20px;
+    text-align: center;
+}
+
+/* Video - Playlist Containers */ 
+
+.video_container{
+    display: flex;   
+    background: #e6e6e6;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+    
+}
+
+.flex-direction{
+    flex-direction:row;
   }
-  
-.container  {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-.background_faint {
-  height: 690px;
-  width: 100vw;
-  margin-left: calc(-50vw + 50% - 8px);
-  position: relative;
+
+.playlist-content{
+    float: right;
+    width: 300px;
+    overflow-y: scroll;
+    height: 600px;
+    margin: 15 0 30 0;
 
 }
-.grid__content-video > .video {
-  width: 100%;
-  margin-top: 0px;
-  max-width: 960px;
-  height: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-}
-.grid_playlist{
 
-margin-top: -200px;
-max-width: 400px;
+.video-content{
+    float: left;
+    width: calc(100% - 350px);
+    
 }
 
-.container .sliders {
-  position:absolute;
- width: 100%;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
-  max-height: 320px;
-  overflow-y: scroll;
-  margin-left: 15px;
-  max-width: 360px;
-  transition: all 1s ease-in-out;
+/* Video Content */
+
+.video{ 
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    
 }
+
+/* Playlist Content */
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #666666;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-.playlist-title{
-max-width: 400px;
-padding: 10px;
-}
-
-.grid_playlist .playlist_video{
-  padding-left: -150px;
-  float: left;
-  width: 100%;
-  max-width: 380px;
-  height: 60px;
-  border-radius: 10px;
-  background: #fefeff;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  
-}
-.grid_playlist .playlist_video > img {
-  font-size: 15px;
-  font-weight: 400;
-  float: left;
-  margin-right: 10px
-}
-.grid_playlist .playlist_video .playlist-text > p {
-  
-  max-width: 500px;
-  font-size: 15px;
-  font-weight: 400; 
-  text-align: left;
-  vertical-align: middle;
-  line-height: 60px;  
-}
-
-
-#img-responsive {
-  border-radius: 10px 0px 10px 0px;
-  width: 100%;
-  height: 60px;
-}
-
-
-#img-responsive:hover {
-  cursor: pointer;
-}
-
-.vid-container {
-  width: 100%;
-}
-
-.powerby{
-  margin-top: -30px;
-  margin-bottom: 30px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-     /* Yellow */
+    -webkit-appearance: none;
+    width: 7px;
   }
-  
-.container  {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.background_faint {
-    height: 550px;
-    background-color: #efefef;
-    width: 100vw;
-    margin-left: calc(-50vw + 50% - 8px);
-    position: relative;
- 
-}
-.grid__content-video > .video {
-  width: 100%;
-  margin-top: 35px;
-  margin-left: 10px;
-  max-width: 860px;
-  height: 440px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-}
-.grid_playlist{
-
-margin-top: 40px;
-max-width: 400px;
-}
-
-.container .sliders {
-  position:absolute;
- width: 100%;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
-  max-height: 390px;
-  overflow-y: scroll;
-  max-width: 360px;
-  transition: all 1s ease-in-out;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #666666;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-.playlist-title{
-max-width: 400px;
-padding: 10px;
-}
-
-.grid_playlist .playlist_video{
-  padding-left: -150px;
-  float: left;
-  width: 100%;
-  max-width: 280px;
-  height: 60px;
-  border-radius: 10px;
-  background: #fefeff;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  
-}
-.grid_playlist .playlist_video > img {
-  
-  float: left;
-  margin-right: 10px;
-  height: 40px;
-}
-.grid_playlist .playlist_video .playlist-text > p {
-  
-  max-width: 300px;
-  font-size: 13px;
-  font-weight: 400; 
-  text-align: left;
-  vertical-align: middle;
-  line-height: 60px;  
-  cursor: pointer;
-}
-
-
-#img-responsive {
-  border-radius: 10px 0px 10px 0px;
-  width: 50%;
-  height: 50%;
-}
-
-
-#img-responsive:hover {
-  cursor: pointer;
-}
-
-.vid-container {
-  width: 100%;
-}
-
-.powerby{
-  margin-top: -30px;
-  margin-bottom: 30px;
-  text-align: center;
-  vertical-align: middle;
-}
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  body {
-    /* Blue */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   }
-  
-.container  {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-.background_faint {
-  height: 600px;
-  background-color: #efefef;
-  width: 100vw;
-  margin-left: calc(-50vw + 50% - 8px);
-  position: relative;
 
-}
-.grid__content-video > .video {
-  width: 100%;
-  margin-top: 10px;
-  max-width: 960px;
-  height: 540px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-}
-.grid_playlist{
-
-margin-top: 30px;
-max-width: 400px;
+.playlist_video{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-size: 14px; 
+    font-weight: 14px;
 }
 
-.container .sliders {
-  position:absolute;
- width: 100%;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
-  max-height: 490px;
-  overflow-y: scroll;
-  max-width: 400px;
-  transition: all 1s ease-in-out;
+.playlist_video > p {
+margin-top:40px ;
+margin-left: 10px; 
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #666666;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-.playlist-title{
-max-width: 400px;
-padding: 10px;
+.playlist_video img{
+    max-width: 80px;
+    max-height: 80px ;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.grid_playlist .playlist_video{
-  padding-left: -150px;
-  float: left;
-  width: 100%;
-  max-width: 380px;
-  height: 60px;
-  border-radius: 10px;
-  background: #fefeff;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  
-}
-.grid_playlist .playlist_video > img {
-  font-size: 15px;
-  font-weight: 400;
-  float: left;
-  margin-right: 10px
-}
-.grid_playlist .playlist_video .playlist-text > p {
-  
-  max-width: 500px;
-  font-size: 15px;
-  font-weight: 400; 
-  text-align: left;
-  vertical-align: middle;
-  line-height: 60px;  
+/* courses Index */
+
+.wrapper-backbtn{
+    text-align: center;
+    margin-top: 30px;
 }
 
+/* MEDIA QUERIES SECTION */
 
-#img-responsive {
-  border-radius: 10px 0px 10px 0px;
-  width: 100%;
-  height: 60px;
+@media (max-width: 999px) {
+
+    /* Flex Direction*/
+
+    .flex-direction{
+        flex-direction:column;
+        }
+
+        .video_container{
+            margin: 20px; 
+            background: none;    
+            -webkit-box-shadow: none;
+            -moz-box-shadow:none;
+            box-shadow: none;         
+        }
+        /* Video Content */
+
+        .video-content{
+            float: left;
+            width: calc(100%);
+            height: 500px;
+            
+        } 
+        .video{ 
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
+
+
+        /*Playlist Content */
+
+        .playlist-content{
+        
+          width: 100%;
+          
+          overflow-y: scroll;
+          height: 400px;
+          
+        
+        }
+
+        .playlist-content .playlist_video {
+            
+          justify-content: center;
+    
+        }
+
+        .playlist-content .playlist_video > ul{
+            
+            background: lightblue;
+            border-radius: 10px;    
+        }
+
+
+
+
+
+    /* courses Index */
+    
+    .wrapper-backbtn{
+        text-align: center;
+        margin-top: 50px;
+    }
+    
 }
 
+@media (max-width: 414px) {
 
-#img-responsive:hover {
-  cursor: pointer;
+    .video-content{
+        float: left;
+        width: calc(100%);
+        height: 300px;
+        
+    } 
+    .video{ 
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
 }
 
-.vid-container {
-  width: 100%;
-}
-
-.powerby{
-  margin-top: -30px;
-  margin-bottom: 30px;
-  text-align: center;
-  vertical-align: middle;
-}
+/* Back button CSS */
+.back {
+    margin: 0 0 50px;
 }

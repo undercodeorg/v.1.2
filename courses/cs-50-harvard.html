@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +7,7 @@
 
   <!-- Website ICON -->
   <title>Undercode</title>
-  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="icon" type="image/png" href=".img/logo.png">
 
   <!-- Main CSS -->
 
@@ -14,7 +15,7 @@
 
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <link rel="stylesheet" type="text/css" href="../css/slideshow.css" />
-  <link rel="stylesheet" type="text/css" href="../css/video/main.css">
+
 
   <!-- Scripts-->
 
@@ -29,22 +30,25 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-142588448-1');
   </script>
 
 </head>
+
 <body>
-  <!--====== navbar section ===== -->
+  <!-- ====== navbar section ===== -->
   <section class="navBar_section" id="navBar_section">
     <div class="wrapper">
       <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fa fa-bars"></i>
         </span>
-        <a href="index.html" class="logo"><h2>undercode.</h2></a>
+        <a href="/index.html" class="logo">
+          <h2>undercode.</h2>
+        </a>
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="../index.html" class="nav-links">Home</a>
@@ -64,139 +68,164 @@
   </section> <!-- ===== navbar end ===== -->
 
   <section>
-    <div class="wrapper top">
-        <div class="centered">
-          <h1 class="course-title"><span>CS50 by Harvard</span></h1>
-          <hr>
-          <p class="course-description">Enroll in the best CS course there is.</p>
-        </div>
-      <div class="grid_container background_faint">
-        <div class="grid__content-video">
-            <iframe class="video" id="vid_frame" src="https://www.youtube.com/embed/5azaK2cBKGw"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br /><br />
-        </div>
 
-        <div class="grid_playlist">
-          <div class="playlist-title"><h3>Playlist:</h3></div>
-          <div class="container">
-            <div class="sliders" id="sld">
-               
-
-                <div class="playlist_video" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/5azaK2cBKGw'"><img id="img-responsive" src="http://img.youtube.com/vi/5azaK2cBKGw/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">01: Computational Thinking, Scratch</p>
-                </div>
-                </div>  
-
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wEdvGqxafq8'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/wEdvGqxafq8/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">02: C</p>
-                </div>
-                </div>  
-
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/u-kH-5JJSgU'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/u-kH-5JJSgU/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">03: Arrays</p>
-                </div>
-                </div>  
-
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/cC9I3XxkZXw'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/cC9I3XxkZXw/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">04: Memory</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ed2lnJNf7HU'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/ed2lnJNf7HU/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">05: Data Structures</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/uEmF74eHRO8'">
-                  <img id="img-responsive" src="http://img.youtube.com/vi/uEmF74eHRO8/0.jpg">
-                  <div class="playlist-text">
-                  <p class="no_margin">06: HTTP, HTML, CSS</p>
-                 </div>
-                </div>
-
-                 <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/mvlTSMUNQN4'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/mvlTSMUNQN4/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">07: Python</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/zzDUnnj2p8I'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/zzDUnnj2p8I/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">08: Web Programming</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LxDetsPQAPQ'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/LxDetsPQAPQ/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">09: SQL</p>
-                </div>
-                </div>
-
-                <div class="playlist_video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/BSKKX2Z3dzc'">
-                <img id="img-responsive" src="http://img.youtube.com/vi/BSKKX2Z3dzc/0.jpg">
-                <div class="playlist-text">
-                <p class="no_margin">10: Life after 50</p>
-                </div>
-                </div>  
-
-            </div>
-        </div>
+    <div class="wrapper-video-playlist">
+      <div class="header-centered">
+        <h1 class="course-title">CS50 by Harvard</h1>
+        <hr>
+        <p class="course-description">Enroll in the best CS course there is</p>
       </div>
 
+      <div class="video_container flex-direction">
+        <div class="video-content">
+          <iframe class="video" src="https://www.youtube.com/embed/5azaK2cBKGw" id="vid_frame" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+       <div class="playlist-content">
+        <ul>
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/5azaK2cBKGw'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/5azaK2cBKGw/0.jpg">
+
+              <p class="playlist-text">01: Computational Thinking, Scratch</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wEdvGqxafq8'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/wEdvGqxafq8/0.jpg">
+
+              <p class="playlist-text">02: C</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/u-kH-5JJSgU'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/u-kH-5JJSgU/0.jpg">
+
+              <p class="playlist-text">03: Arrays</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/cC9I3XxkZXw'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/cC9I3XxkZXw/0.jpg">
+
+              <p class="playlist-text">04: Memory</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ed2lnJNf7HU'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/ed2lnJNf7HU/0.jpg">
+
+              <p class="playlist-text">05: Data Structures</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/uEmF74eHRO8'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/uEmF74eHRO8/0.jpg">
+
+              <p class="playlist-text">06: HTTP, HTML, CSS</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/mvlTSMUNQN4'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/mvlTSMUNQN4/0.jpg">
+
+              <p class="playlist-text">07: Python</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/zzDUnnj2p8I'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/zzDUnnj2p8I/0.jpg">
+
+              <p class="playlist-text">08: Web Programming</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LxDetsPQAPQ'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/LxDetsPQAPQ/0.jpg">
+
+              <p class="playlist-text">09: SQL</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/BSKKX2Z3dzc'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/BSKKX2Z3dzc/0.jpg">
+
+              <p class="playlist-text">10: Life after 50</p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div> 
+
+      </div>
     </div>
-    </div>
+
   </section>
-  <div class="wrapper">
-    <div class="back">
-      <a href="/resources.html">Go Back</a>
-  </div>
-  <div class="powerby">
+
+  <div class="wrapper-backbtn">
+    <div class="powerby">
       <p>Powered by: <a href="https://www.youtube.com/user/cs50tv" target="_blank">CS50 Harvard</a></p><br><br>
     </div>
+    <div class="back">
+      <a href="/resources.html">Courses Index</a>
+    </div>
   </div>
 
- <!-- Footer-->
- <section>
-  <footer>
-    <div class="wrapper">
-      <ul class="footer_nav">
-        <li>2019 by <a href="../index.html">undecode</a></li>
-        <li><a href="../data-policy.html">Data-Policy</a></li>
-        <li>support@undercode.com</li>
-        <li>Lisbon, Portugal</li>
-        <li>
-          <ul class="social_icons">
-            <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
+  <!-- Footer-->
+  <section>
+    <footer>
+      <div class="wrapper">
+        <ul class="footer_nav">
+          <li>2019 by <a href="../index.html">undecode</a></li>
+          <li><a href="../data-policy.html">Data-Policy</a></li>
+          <li>support@undercode.com</li>
+          <li>Lisbon, Portugal</li>
+          <li>
+            <ul class="social_icons">
+              <li>
+                <a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a>
+              </li>
 
-            <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
+              <li>
+                <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i>
+              </li>
 
-            <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
+              <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
 
-            <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </footer>
+              <li>
+                <a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </section>
+
 
   <script type="text/javascript" src="../js/app.js"></script>
 
-<!-- ===== nav script end ===== -->
 </body>
 
 </html>
