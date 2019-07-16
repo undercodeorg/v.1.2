@@ -36,7 +36,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
 
 .playlist-content{
     float: right;
-    width: 300px;
+    width: 340px;
     overflow-y: scroll;
     height: 600px;
     margin: 15 0 30 0;
@@ -74,7 +74,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
 .playlist_video{
     display: flex;
     justify-content: flex-start;
-    text-align: center;
+    /* text-align: center; */
     background: #333;
     color: #fff;
     font-size: 14px; 
@@ -91,7 +91,8 @@ margin-left: 10px;
     max-height: 80px ;
     margin-top: 20px;
     margin-left: 10px;
-    border-radius: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     cursor: pointer;
 }
 
