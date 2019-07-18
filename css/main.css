@@ -560,6 +560,10 @@ footer {
       margin: 0;
       }
 
+      .btn {
+          padding-top: 10px;
+      }
+
       .nav-links {
       margin-left: 40px;
       }
