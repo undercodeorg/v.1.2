@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,8 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
-  <link rel="stylesheet" type="text/css" href="../css/single-video.css" />
+  <link rel="stylesheet" type="text/css" href="../css/slideshow.css" />
+
 
   <!-- Scripts-->
 
@@ -28,22 +30,25 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-142588448-1');
   </script>
 
 </head>
+
 <body>
-  <!--====== navbar section ===== -->
+  <!-- ====== navbar section ===== -->
   <section class="navBar_section" id="navBar_section">
     <div class="wrapper">
       <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fa fa-bars"></i>
         </span>
-        <a href="../index.html" class="logo"><h2>undercode.</h2></a>
+        <a href="/index.html" class="logo">
+          <h2>undercode.</h2>
+        </a>
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="../index.html" class="nav-links">Home</a>
@@ -62,27 +67,455 @@
     </div>
   </section> <!-- ===== navbar end ===== -->
 
-  <section> <!-- NEED JS SCRIPT TO CHANGE THE DOM!-->
-    <div class="wrapper center_two">
-          <div>
-              <h1>Course</h1>
-              <hr>
-              <h1 class="course-title">Introduction to JavaScript</h1>
-              <p class="course-description">Join this epic journey of JavaScript tutorials for beginners.</p>
-            </div>
-              <div class="video_wrapper">
-                <!-- THE YOUTUBE PLAYER -->
-                <div class="vid-container">
-                  <iframe class="vid_frame" id="vid_frame" src="https://www.youtube.com/embed/hdI2bqOjy3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <br />
-                <p>Powered by: <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">Traversy Media</a></p><br /><br />
-                <p class="back"><a href="../resources.html">Courses Index</a></p><br><br>
-                </div>
-          </div>
-          </div>
+  <section>
+
+    <div class="wrapper-video-playlist">
+      <div class="header-centered">
+        <h1 class="course-title">JavaScript Tutorial For Beginner</h1>
+        <hr>
+        <p class="course-description">Join me on this epic journey of JavaScript tutorials for beginners.</p>
+      </div>
+
+      <div class="video_container flex-direction">
+        <div class="video-content">
+          <iframe class="video" src="https://www.youtube.com/embed/qoSksQ4s_hg" id="vid_frame" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+
+       <div class="playlist-content">
+        <ul>
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/qoSksQ4s_hg">
+              <img id="img-responsive" src="http://img.youtube.com/vi/qoSksQ4s_hg/0.jpg">
+
+              <p class="playlist-text">01: Introduction</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/VB7y0yxZjro'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/VB7y0yxZjro/0.jpg">
+
+              <p class="playlist-text">02: What is JavaScript?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ranSYb-EhrU'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/ranSYb-EhrU/0.jpg">
+
+              <p class="playlist-text">03: Hello World! in JavaScript</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/czlwRUeTCgw'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/czlwRUeTCgw/0.jpg">
+
+              <p class="playlist-text">04: Where to put your JS</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/JzZFccCEgGA'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/JzZFccCEgGA/0.jpg">
+
+              <p class="playlist-text">05: Chrome Developer Tools</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/QLatPwsbDrQ'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/QLatPwsbDrQ/0.jpg">
+
+              <p class="playlist-text">06: JavaScript Syntax & Rules</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/u0Mq3FzpsmI'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/u0Mq3FzpsmI/0.jpg">
+
+              <p class="playlist-text">07: JavaScript Variables</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/_MC0Gw07w8M'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/_MC0Gw07w8M/0.jpg">
+
+              <p class="playlist-text">08: Basic Mathematical Operators</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Z1eV0RBRam0'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/Z1eV0RBRam0/0.jpg">
+
+              <p class="playlist-text">09: Math Operator Short-hand</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/tH-q9QFNUdA'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/tH-q9QFNUdA/0.jpg">
+
+              <p class="playlist-text">10: Logging to the Console</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/B4ZCFdrBmbE'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/B4ZCFdrBmbE/0.jpg">
+
+              <p class="playlist-text">11: Booleans in JavaScript</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Lp-Du2fKoug'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/Lp-Du2fKoug/0.jpg">
+
+              <p class="playlist-text">12: If Statements</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/1v1Bk3Q02Sc'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/1v1Bk3Q02Sc/0.jpg">
+
+              <p class="playlist-text">13: Else If Statements</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LjGaaWX_NbE'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/LjGaaWX_NbE/0.jpg">
+
+              <p class="playlist-text">14: Comparison Operators</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/mbT7sSmVUS8'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/mbT7sSmVUS8/0.jpg">
+
+              <p class="playlist-text">15: Logical Operators</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/PpbFyLTtpWI'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/PpbFyLTtpWI/0.jpg">
+
+              <p class="playlist-text">16: While Loops</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/U87UmD-5h4o'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/U87UmD-5h4o/0.jpg">
+
+              <p class="playlist-text">17: For Loops</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/QSuTH0C_3_Y'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/QSuTH0C_3_Y/0.jpg">
+
+              <p class="playlist-text">18: Break & Continue</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/eZBTLsv2ktM'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/eZBTLsv2ktM/0.jpg">
+
+              <p class="playlist-text">19: Practical Example using Loops</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/KH57lIgwe2g'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/KH57lIgwe2g/0.jpg">
+
+              <p class="playlist-text">20: Functions</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/kjdZ1h3CIs4'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/kjdZ1h3CIs4/0.jpg">
+
+              <p class="playlist-text">21: Variable Scope</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/TD3Pfuxgnuc'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/TD3Pfuxgnuc/0.jpg">
+
+              <p class="playlist-text">22: Numbers</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/0ZiltZDg9Gg'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/0ZiltZDg9Gg/0.jpg">
+
+              <p class="playlist-text">23: NaN (Not a Number)</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/k8MIbEVXhE0'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/k8MIbEVXhE0/0.jpg">
+
+              <p class="playlist-text">24: Strings</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/HEdikBHsMag'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/HEdikBHsMag/0.jpg">
+
+              <p class="playlist-text">25: Slice and Split Strings</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/EUnV-fCY0Pc'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/EUnV-fCY0Pc/0.jpg">
+
+              <p class="playlist-text">26: Arrays</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/t-evBCCQFzM'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/t-evBCCQFzM/0.jpg">
+
+              <p class="playlist-text">27: Introduction to Objects</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wA5vU_HQfVI'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/wA5vU_HQfVI/0.jpg">
+
+              <p class="playlist-text">28: Creating a new JS Object</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yVdU2coJ1VQ'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/yVdU2coJ1VQ/0.jpg">
+
+              <p class="playlist-text">29: THIS Keyword</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/SrhHszXkMRU'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/SrhHszXkMRU/0.jpg">
+
+              <p class="playlist-text">30: Constructor Functions</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/irrxnH-nkqg'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/irrxnH-nkqg/0.jpg">
+
+              <p class="playlist-text">31: The Date Object</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/H63dVFDuJDM'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/H63dVFDuJDM/0.jpg">
+
+              <p class="playlist-text">32: What is the DOM?</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/SowaJlX1uKA'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/SowaJlX1uKA/0.jpg">
+
+              <p class="playlist-text">33: Traversing the DOM</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FQuwArzGPYo'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/FQuwArzGPYo/0.jpg">
+
+              <p class="playlist-text">34: Changing Page Content</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/V0S0LXvnW-o'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/V0S0LXvnW-o/0.jpg">
+
+              <p class="playlist-text">35: Changing Element Attributes</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/97agDBCyxAE'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/97agDBCyxAE/0.jpg">
+
+              <p class="playlist-text">36: Changing CSS Styles</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/TrGI9Yki-24'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/TrGI9Yki-24/0.jpg">
+
+              <p class="playlist-text">37: Adding Elements to the DOM</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/rBGgguNnutE'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/rBGgguNnutE/0.jpg">
+
+              <p class="playlist-text">38: Removing Elements from the DOM</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/bf_9IeihQ0M'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/bf_9IeihQ0M/0.jpg">
+
+              <p class="playlist-text">39: Introduction to JavaScript Events</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XQEfWd1lh4Q'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/XQEfWd1lh4Q/0.jpg">
+
+              <p class="playlist-text">40: The onClick Event</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/RVA4HoEE_q8'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/RVA4HoEE_q8/0.jpg">
+
+              <p class="playlist-text">41: Window onLoad Event</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Az5J_EkhYCY'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/Az5J_EkhYCY/0.jpg">
+
+              <p class="playlist-text">42: JavaScript Timers</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/BhlvQfIaE4k'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/BhlvQfIaE4k/0.jpg">
+
+              <p class="playlist-text">43: Accessing Form Elements</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/b0pxAb_yy2U'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/b0pxAb_yy2U/0.jpg">
+
+              <p class="playlist-text">44: Simple Form Validation</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/uq7omoxwA7A'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/uq7omoxwA7A/0.jpg">
+
+              <p class="playlist-text">45: JavaScript Libraries</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="playlist_video"
+              onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Qikr22Tc3wg'">
+              <img id="img-responsive" src="http://img.youtube.com/vi/Qikr22Tc3wg/0.jpg">
+
+              <p class="playlist-text">46: What to Study Next</p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div> 
+
+      </div>
+    </div>
+
   </section>
+
+  <div class="wrapper-backbtn">
+    <div class="powerby">
+      <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net
+          Ninja</a></p><br><br>
+    </div>
+    <div class="back">
+      <a href="../resources.html">Courses Index</a>
+    </div>
+  </div>
 
   <!-- Footer-->
   <section>
@@ -95,22 +528,29 @@
           <li>Lisbon, Portugal</li>
           <li>
             <ul class="social_icons">
-              <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
+              <li>
+                <a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a>
+              </li>
 
-              <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
+              <li>
+                <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i>
+              </li>
 
               <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
 
-              <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
+              <li>
+                <a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a>
+              </li>
             </ul>
           </li>
         </ul>
       </div>
     </footer>
+  </section>
 
-    <script type="text/javascript" src="../js/app.js"></script>
 
-  <!-- ===== nav script end ===== -->
-  </body>
+  <script type="text/javascript" src="../js/app.js"></script>
 
-  </html>
+</body>
+
+</html>
