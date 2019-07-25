@@ -228,6 +228,12 @@ body {
 
 }
 
+.newsletter_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .pad {
     text-align: center;
 }
@@ -290,14 +296,18 @@ hr {
     margin-left: 80px;
     padding: 15px 25px;
     font-family: inherit;
-    color: #029DE0;
+    color: #fff;
     font-weight: 600;
-    background-color: rgba(255,255,255,.97);
+    background-color: #029DE0;
     box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
     border: none;
     cursor: pointer;
     border-radius: 15px;
     text-decoration: none;
+}
+
+#sigin {
+    color: #029DE0;  
 }
 
 .resource_btn {
@@ -396,6 +406,12 @@ hr {
 /* Resource Index */
 .resource_index {
     margin: 40px 0 100px;
+}
+
+.newsletter {
+    margin: 200px 0;
+    background: #f2f3f7;
+    padding: 50px 0;
 }
 
 /* Newsletter */
