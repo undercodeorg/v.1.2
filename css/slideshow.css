@@ -104,6 +104,13 @@ cursor: pointer;
     margin-top: 30px;
 }
 
+/* Screens wider than 1200px width */
+@media (min-width: 1200px) {
+    .wrapper-video-playlist {
+        width: 100%;
+    }
+}
+
 /* MEDIA QUERIES SECTION */
 
 @media (max-width: 999px) {
