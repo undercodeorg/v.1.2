@@ -5,7 +5,7 @@ Undercode is a platform for developers and designers alike (more like a communit
 The undercode project is an open-sourced one, open to all developers who wish to contribute and help grow the technology (programming/web design) ecosystem. 
 
 # NB:
-While this project is open-source, anyone can contribute as long as you have an intermediate knowledge of programming. 
+While this project is open-source, anyone can contribute as long as you have an intermediate knowledge of programming and how the web works. 
 Welcome to the undercode team!
 
 The undercode team ☕
